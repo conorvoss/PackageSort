@@ -12,9 +12,9 @@ def sort(width, height, length, mass):
   else:
     return "STANDARD"
 
-width = input("Enter Width: ")
-height = input("Enter Height: ")
-length = input("Enter Length: ")
-mass = input("Enter Mass: ")
+#width = input("Enter Width: ")
+#height = input("Enter Height: ")
+#length = input("Enter Length: ")
+#mass = input("Enter Mass: ")
 
-print(sort(width, height, length, mass))
+print(sort(1, 1, 1, 1))
