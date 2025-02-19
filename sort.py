@@ -12,9 +12,14 @@ def sort(width, height, length, mass):
   else:
     return "STANDARD"
 
-width = float(input("Enter Width: "))
-height = float(input("Enter Height: "))
-length = float(input("Enter Length: "))
-mass = float(input("Enter Mass: "))
-
-print(sort(width, height, length, mass))
+try:
+  width = float(input("Enter Width: "))
+  height = float(input("Enter Height: "))
+  length = float(input("Enter Length: "))
+  mass = float(input("Enter Mass: "))
+except ValueError:
+  print("Inputs must be properly formatted as floats")
+except:
+  print("Error")
+else:
+  print(sort(width, height, length, mass))
